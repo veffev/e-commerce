@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  min-height: 85vh;
+  
+}
+
+
+.error-addToCart{
+  color:"red";
+  padding:"10px";
+}
+
+.style-link{
+  text-decoration: none;
+  color: black;
+}

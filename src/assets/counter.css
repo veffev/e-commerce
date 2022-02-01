@@ -1,0 +1,13 @@
+
+
+.flex-btn-counter{
+    width: 50%;
+    align-items: center;
+    justify-content: start;
+}
+
+@media screen and (max-width: 767) {
+    .btn-counter{align-items: center;
+    flex-direction: column;}
+  
+  }

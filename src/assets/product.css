@@ -1,0 +1,18 @@
+.product{
+    padding: 25px;
+   
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.product-card{
+    padding: 15px;
+    width: 350px;
+    box-shadow: 0px 0px 20px 0px #aaaaaa;
+    margin-bottom: 25px;
+
+}
+
+.product-card .product-card-info{
+    padding: 15px;
+}
