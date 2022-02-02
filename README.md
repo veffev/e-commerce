@@ -14,6 +14,6 @@ you can access the site with these credentials:
 email: test@gmail.com
 password: password
 
-A server will be loaded on Heroku to allow access
+You can access only if the server is active. Download and run with "npm start" the repository server who name is "app-server-eCommerce".
 
 Enjoy!!
