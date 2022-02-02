@@ -3,11 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
-
   const src =
     "https://www.nextre.it/wp-content/uploads/2018/04/ecommercedata.jpg";
 
-  const style = {
+  const styleContainerHome = {
     minHeight: "952px",
     width: "100%",
     backgroundImage: `url(${src})`,
@@ -16,22 +15,22 @@ const Home = () => {
     position: "relative",
   };
 
+  const styleLinearGradien = {
+    position: "absolute",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "952px",
+    background:
+      "radial-gradient(circle, rgba(6,6,3,0.5130427170868348) 0%, rgba(0,0,0,0.10688025210084029) 100%)",
+  };
+
   return (
     <div
-      style={style}
-      className="d-flex justify-content-center align-items-center"
+      style={styleContainerHome}
+      className="container-home d-flex justify-content-center align-items-center"
     >
-      <div
-        style={{
-          position: "absolute",
-          top: "0",
-          left: "0",
-          width: "100%",
-          height: "952px",
-          background:
-            "radial-gradient(circle, rgba(6,6,3,0.5130427170868348) 0%, rgba(0,0,0,0.10688025210084029) 100%)",
-        }}
-      ></div>
+      <div style={styleLinearGradien}></div>
 
       <Button
         variant="warning"

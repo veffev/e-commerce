@@ -4,7 +4,7 @@ import { useState } from 'react';
 function ClientGetApi(){ 
 
     //state loading
-    const [loading,setLoading]=useState(true)
+    const [loading,setLoading]=useState(false)
     //data
     const [data,setData]=useState(undefined)
     //error
@@ -13,13 +13,12 @@ function ClientGetApi(){
     const fetchProduct = async (ID)=>{
         try{
             setLoading(true)
-            setError(undefined)
+            setError(false)
             const result = await axios({
                 baseURL:"http://localhost:8080",
                 url:"/product/"+ID,
                 method:"GET",
             })
-            console.log(result.data)
             setData(result.data)
         }catch(e){
             console.log(e)

@@ -15,7 +15,6 @@ export default function Counter({available,quantityProduct,productId,productAmou
     }
 
     const getAmount = (productAmount, productQuantity) => {
-        console.log(productAmount,productQuantity,"sonon count")
         const singleAmount = productAmount * productQuantity;
         return <span><h6>Amount: {singleAmount}$</h6></span>;
       };

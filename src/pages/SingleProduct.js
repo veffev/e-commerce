@@ -28,7 +28,7 @@ export default function SingleProduct() {
 
   useEffect(() => {
     clientProduct.fetchProduct(id);
-  });
+  },[]);
 
   if (clientProduct.loading) {
     return (
@@ -63,13 +63,13 @@ export default function SingleProduct() {
   }
 
   return (
-    <div>
+    <div className="py-4">
       <h1>Product</h1>
       <Container fluid className="container-product">
         <Container
           fluid
           className="container-product-info"
-          style={{ padding: "20px", marginTop: "100px" }}
+          style={{ padding: "20px", marginTop: "20px" }}
         >
           <Row>
             <Col>
@@ -94,7 +94,7 @@ export default function SingleProduct() {
           <Row>
             <Col>
             {showQuantity ? (
-            <Quantity quantity={clientProduct.data.quantity} productId={clientProduct.data.id} />
+            <Quantity productId={clientProduct.data.id} />
           ) : null}
               <Button
                 variant="primary"

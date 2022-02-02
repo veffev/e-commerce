@@ -1,8 +1,8 @@
 import { CartState } from "../context/Context";
 import Button from "react-bootstrap/Button";
 
-export default function Quantity({quantity,productId,}) {
-    const { updateCart } = CartState();
+export default function Quantity({ productId }) {
+  const { updateCart } = CartState();
   return (
     <div style={{ padding: "15px", fontSize: "15px", paddingTop: "0px" }}>
       <Button
@@ -13,7 +13,6 @@ export default function Quantity({quantity,productId,}) {
       >
         -
       </Button>
-      <span>quantity: {quantity}</span>
       <Button
         variant="outline-dark"
         onClick={() => {
